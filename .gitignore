@@ -1,2 +1,5 @@
 node_modules/
 dist/
+src/main.js
+examples/**/main.js
+examples/**/ui.js

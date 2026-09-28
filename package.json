@@ -4,8 +4,8 @@
   "private": true,
   "packageManager": "pnpm@10.17.1",
   "scripts": {
-    "build": "orb-plugin build",
-    "pack": "orb-plugin pack"
+    "check": "orb-plugin check src",
+    "build": "orb-plugin build src"
   },
   "devDependencies": {
     "@orb/plugin-sdk": "0.1.0",
