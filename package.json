@@ -1,0 +1,1 @@
+{"name":"orb-plugin-template-server","version":"0.1.0","private":true,"packageManager":"pnpm@10.17.1","scripts":{"build":"node scripts/build.mjs","pack":"pnpm build"},"devDependencies":{"fflate":"0.8.2"}}

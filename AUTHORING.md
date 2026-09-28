@@ -1,0 +1,3 @@
+# Authoring contract
+
+The manifest is the authority for identity, entry files, capabilities and optional assets. Never add undeclared network, frame or UI abilities. Server code calls `orb.host(1)`; scripted browser code calls `orb.ui(1)`. Register surfaces and commands during activation. Command placements are closed host metadata (`composer-action` and `composer-media`); the host owns attribution, grouping, overflow, keyboard access and invocation. Scripted surfaces publish sealed node trees. Frames receive an isolated document and message only through the frame bridge described in `host-v1.d.ts`. Bundle roots contain `manifest.json`, `main.js`, and `ui.js` only when `uiEntry` declares it.
