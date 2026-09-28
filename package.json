@@ -5,7 +5,8 @@
   "packageManager": "pnpm@10.17.1",
   "scripts": {
     "check": "orb-plugin check src",
-    "build": "orb-plugin build src"
+    "build": "orb-plugin build src",
+    "pack": "orb-plugin pack src --out dist/server-starter.orb-plugin.zip"
   },
   "devDependencies": {
     "@orb/plugin-sdk": "0.1.0",

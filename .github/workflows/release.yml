@@ -17,7 +17,8 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm build
+      - run: pnpm check
+      - run: pnpm pack
       - uses: softprops/action-gh-release@v2
         with:
           files: dist/*.orb-plugin.zip
