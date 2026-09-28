@@ -2,14 +2,14 @@
   "name": "orb-plugin-template-server",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@12.6.0",
   "scripts": {
-    "check": "orb-plugin check src",
-    "build": "orb-plugin build src",
-    "pack": "orb-plugin pack src --out dist/server-starter.orb-plugin.zip"
+    "check": "orb-plugin support --check SUPPORT.md && orb-plugin check . --source-dir src --out-dir .",
+    "build": "orb-plugin build . --source-dir src --out-dir .",
+    "pack": "orb-plugin pack . --source-dir src --out dist/server-starter.orb-plugin.zip"
   },
   "devDependencies": {
-    "@orb/plugin-sdk": "0.1.0",
-    "@orb/plugin-toolchain": "0.1.0"
+    "@orb/plugin-sdk": "https://github.com/Inktomi93/orbweaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-sdk-0.1.0.tgz",
+    "@orb/plugin-toolchain": "https://github.com/Inktomi93/orbweaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-toolchain-0.1.0.tgz"
   }
 }
