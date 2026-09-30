@@ -1,5 +1,5 @@
 "use strict";
-// This file runs in the server QuickJS guest. It has no Node, DOM, fetch, or module loader.
+// This file runs in the QuickJS guest. It has no Node, DOM, fetch, or module loader.
 const host = orb.host(1);
 if (host.grants.includes("tools.register")) {
     host.tools.register({
@@ -22,7 +22,7 @@ if (host.grants.includes("ui.surface")) {
     host.ui.register({
         id: "welcome",
         anchor: "settings",
-        title: "Server starter",
+        title: "Starter",
         tier: "static",
         spec: {
             kind: "stack",
@@ -44,4 +44,4 @@ if (host.grants.includes("ui.surface")) {
         },
     });
 }
-host.log.info("server starter registered");
+host.log.info("starter registered");

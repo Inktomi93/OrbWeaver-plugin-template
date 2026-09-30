@@ -1,10 +1,10 @@
 {
-  "id": "starter-server",
-  "name": "Server Starter",
+  "id": "starter",
+  "name": "Starter",
   "version": "0.1.0",
   "hostVersion": 1,
   "entry": "main.js",
-  "description": "A small server plugin with a model tool, a house-rendered settings panel and shipped image, and a composer command.",
+  "description": "A small plugin with a model tool, a house-rendered settings panel and shipped image, and a composer command.",
   "author": "Orbweaver",
   "capabilities": ["tools.register", "ui.surface"]
 }

@@ -1,4 +1,4 @@
-# Authoring an Orbweaver server plugin
+# Authoring an Orbweaver plugin
 
 This repository is both source code and a directly installable plugin. You author `manifest.json` and
 `src/main.ts`. `pnpm build` writes deterministic root `main.js`. Commit all three. Orbweaver fetches the
@@ -24,7 +24,7 @@ stale, or obsolete. `pnpm run pack` is optional and writes an ignored ZIP for ma
 
 ```text
 manifest.json       authored identity, version, capabilities, and entry declarations
-src/main.ts         authored server-guest source
+src/main.ts         authored plugin-guest source
 main.js             generated, committed install entry
 ui/assets/          optional flat raster images shipped with the plugin
 package.json        author-only build commands and pinned toolchain URLs
@@ -87,17 +87,17 @@ settlement deadlines.
 
 ## The main runtime
 
-`src/main.ts` runs in a server-side QuickJS guest. Its only application door is `orb.host(1)`.
+`src/main.ts` runs in a QuickJS guest. Its only application door is `orb.host(1)`.
 
 Orbweaver has three separate author worlds. This starter intentionally uses only the first:
 
 | World | Entry | Door | Purpose |
 | --- | --- | --- | --- |
-| Server guest | `main.js` | `orb.host(1)` | Effects, tools, events, static house UI, and commands |
+| Main guest | `main.js` | `orb.host(1)` | Effects, tools, events, static house UI, and commands |
 | Scripted UI guest | optional `ui.js` | `orb.ui(1)` | Local house-tree computation without DOM access |
 | Isolated frame script | embedded in `main.js` | DOM plus typed frame messages | Custom pixels inside an opaque-origin document |
 
-Use the visual template before adding `ui.ts` or frame code: it already has separate compiler worlds,
+Use the scripted UI template before adding `ui.ts` or frame code: it already has separate compiler worlds,
 matching manifests, and a frame injection example. Do not add DOM types to this main program.
 
 Author runtime entries as TypeScript scripts without imports or exports. JSX is not an authoring boundary:
@@ -227,7 +227,7 @@ corresponding feature.
 
 ## Packaging and limits
 
-`pnpm run pack` creates `dist/server-starter.orb-plugin.zip` from current TypeScript without changing root
+`pnpm run pack` creates `dist/starter.orb-plugin.zip` from current TypeScript without changing root
 `main.js`. Run `pnpm check` first if the repository itself is also a distribution source. Installation still
 performs authoritative manifest, entry, size, and capability validation.
 

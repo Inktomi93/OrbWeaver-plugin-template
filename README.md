@@ -1,4 +1,4 @@
-# Orbweaver server plugin starter
+# Orbweaver plugin starter
 
 This starter has one authored TypeScript source and checked generated JavaScript. Orbweaver can install it directly from its Git URL.
 
@@ -23,7 +23,7 @@ it. The GitHub-pinned SDK and toolchain dependencies give your editor types with
 
 ## Upload an archive (optional)
 
-Run `pnpm run pack` to make `dist/server-starter.orb-plugin.zip` for manual upload. The archive is generated and untracked.
+Run `pnpm run pack` to make `dist/starter.orb-plugin.zip` for manual upload. The archive is generated and untracked.
 
 The default example demonstrates a model tool, a host-rendered settings panel with a shipped image, and a
 composer command. See [AUTHORING.md](AUTHORING.md) for lifecycle, hooks, placements, capabilities, runtime
