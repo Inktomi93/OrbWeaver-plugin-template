@@ -127,6 +127,12 @@ same invocation. Do not persist, compare, or invent them.
 The parameter object is JSON Schema, but handler input is still `unknown`; validate and clamp it before use.
 The handler returns the exact string the model receives. Capability: `tools.register`.
 
+Set `displayName` to the transcript label. Return readable prose, or a JSON document with a `summary` string for the generic card.
+Completed tool call/result pairs replay from the active swipe on later tool-capable turns. `replayHistory` defaults to `true`.
+Set `replayHistory: false` for transient results that must not enter later prompts.
+Hiding or deleting a tool card removes its replay but does not undo its effects. The message prose remains.
+The history budget trims each exchange with its message row. RPG turn-tool display records remain display-only.
+
 ### Event subscriptions
 
 `host.events.on(type, handler)` subscribes during activation. Capability: `events.subscribe`.

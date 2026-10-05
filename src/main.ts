@@ -4,6 +4,8 @@ const host = orb.host(1);
 if (host.grants.includes("tools.register")) {
   host.tools.register({
     name: "greet",
+    displayName: "Greet a character",
+    replayHistory: true,
     description: "Greet a character by name",
     parameters: {
       type: "object",

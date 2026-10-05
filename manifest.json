@@ -1,7 +1,7 @@
 {
   "id": "starter",
   "name": "Starter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "hostVersion": 1,
   "entry": "main.js",
   "description": "A small plugin with a model tool, a house-rendered settings panel, and a composer command.",

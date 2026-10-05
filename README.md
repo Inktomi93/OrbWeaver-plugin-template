@@ -23,5 +23,8 @@ composer command. See [AUTHORING.md](AUTHORING.md) for lifecycle, hooks, placeme
 limits, and update rules. [SUPPORT.md](SUPPORT.md) is the checked map of available hooks, host calls,
 capabilities, and placement points; `pnpm check` also refuses a stale copy.
 
+The example tool sets `displayName` and `replayHistory: true`. Completed calls replay from the active swipe on later tool-capable turns.
+Set `replayHistory: false` for transient results. Hiding or deleting a card removes future replay without undoing the tool's effects.
+
 For larger working examples, browse Orbweaver's
 [showcase plugins](https://github.com/Inktomi93/OrbWeaver/tree/main/packages/showcase-plugins).
