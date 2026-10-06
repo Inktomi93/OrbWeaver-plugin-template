@@ -14,13 +14,6 @@ Orbweaver reads `manifest.json` and `main.js` from the Git repository. It never 
 scripts. CI runs `pnpm check` and refuses missing, stale, or obsolete generated JavaScript without rewriting
 it. The GitHub-pinned SDK and toolchain dependencies give your editor types without an Orbweaver installation.
 
-> **Template publication prerequisite:** publish the `plugin-authoring-v0.1.0` GitHub Release with both
-> `orb-plugin-sdk-0.1.0.tgz` and `orb-plugin-toolchain-0.1.0.tgz`. This checkout intentionally has no
-> `pnpm-lock.yaml` until that one external prerequisite is complete. The template maintainer must then run
-> `pnpm install`, commit the resulting lockfile, and keep CI on `--frozen-lockfile`. Until then, the install
-> command in step 2 and CI are expected to stop. Do not replace the pinned URLs with local tarballs or commit
-> a local-only lockfile.
-
 ## Upload an archive (optional)
 
 Run `pnpm run pack` to make `dist/starter.orb-plugin.zip` for manual upload. The archive is generated and untracked.
@@ -31,4 +24,4 @@ limits, and update rules. [SUPPORT.md](SUPPORT.md) is the checked map of availab
 capabilities, and placement points; `pnpm check` also refuses a stale copy.
 
 For larger working examples, browse Orbweaver's
-[showcase plugins](https://github.com/Inktomi93/orbweaver/tree/main/packages/showcase-plugins).
+[showcase plugins](https://github.com/Inktomi93/OrbWeaver/tree/main/packages/showcase-plugins).

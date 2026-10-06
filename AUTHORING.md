@@ -248,6 +248,6 @@ limits and field shapes live in the installed SDK and Orbweaver's install valida
 - If an image is missing, use a committed flat `ui/assets/<name>` path in `bundleAsset`; do not pass a URL or
   an asset ID there.
 
-The [showcase plugins](https://github.com/Inktomi93/orbweaver/tree/main/packages/showcase-plugins) provide
+The [showcase plugins](https://github.com/Inktomi93/OrbWeaver/tree/main/packages/showcase-plugins) provide
 larger examples against the same SDK and toolchain. Use [SUPPORT.md](SUPPORT.md) for the checked capability,
 hook, host-call, surface, and placement registry rather than inferring support from a declaration alone.
