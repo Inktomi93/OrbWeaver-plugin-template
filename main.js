@@ -28,8 +28,7 @@ if (host.grants.includes("ui.surface")) {
             kind: "stack",
             gap: "field",
             children: [
-                { kind: "image", bundleAsset: "ui/assets/starter-mark.png", alt: "Violet checkerboard starter mark", aspect: "square" },
-                { kind: "text", value: "This panel and its shipped image are rendered by Orbweaver from plugin data.", voice: "gloss" },
+                { kind: "text", value: "This panel is rendered by Orbweaver from plugin data.", voice: "gloss" },
             ],
         },
     });

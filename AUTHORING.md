@@ -210,16 +210,15 @@ one from an image node, declared grid tile, or detail-stage hero with
 location. Orbweaver maps it to this plugin's installer-owned asset at render time. Do not use arbitrary URLs
 in image nodes, and do not put a bundle path into `assetId`.
 
-The default settings panel renders `ui/assets/starter-mark.png`, so both Git installation and optional ZIP
-packing exercise the same admitted asset path.
+The starter ships `ui/assets/starter-mark.png` as an asset-validation example for Git installation and ZIP
+packing. The settings panel keeps its instructional prose first and does not render the decorative mark.
 
 ## Example map
 
 The default plugin demonstrates three independent activation registrations:
 
 - `greet` validates model-supplied `unknown` input and returns a model-readable string.
-- `welcome` is a static `settings` surface rendered entirely by Orbweaver, including a shipped
-  `bundleAsset` image.
+- `welcome` is a static `settings` surface with instructional prose rendered entirely by Orbweaver.
 - `hello` is a typed command also placed in `composer-action`; it returns feedback through a house toast.
 
 Each registration is separately grant-guarded. Remove capabilities from the manifest when removing the

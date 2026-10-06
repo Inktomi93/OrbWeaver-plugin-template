@@ -18,7 +18,7 @@ it. The GitHub-pinned SDK and toolchain dependencies give your editor types with
 
 Run `pnpm run pack` to make `dist/starter.orb-plugin.zip` for manual upload. The archive is generated and untracked.
 
-The default example demonstrates a model tool, a host-rendered settings panel with a shipped image, and a
+The default example demonstrates a model tool, a host-rendered settings panel, and a
 composer command. See [AUTHORING.md](AUTHORING.md) for lifecycle, hooks, placements, capabilities, runtime
 limits, and update rules. [SUPPORT.md](SUPPORT.md) is the checked map of available hooks, host calls,
 capabilities, and placement points; `pnpm check` also refuses a stale copy.
