@@ -9,7 +9,7 @@
     "pack": "orb-plugin pack . --source-dir src --out dist/starter.orb-plugin.zip"
   },
   "devDependencies": {
-    "@orb/plugin-sdk": "https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-sdk-0.1.0.tgz",
-    "@orb/plugin-toolchain": "https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-toolchain-0.1.0.tgz"
+    "@orb/plugin-sdk": "https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-sdk-0.2.1.tgz",
+    "@orb/plugin-toolchain": "https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-toolchain-0.2.1.tgz"
   }
 }

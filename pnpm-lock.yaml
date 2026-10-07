@@ -167,21 +167,21 @@ importers:
   .:
     devDependencies:
       '@orb/plugin-sdk':
-        specifier: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-sdk-0.1.0.tgz
-        version: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-sdk-0.1.0.tgz
+        specifier: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-sdk-0.2.1.tgz
+        version: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-sdk-0.2.1.tgz
       '@orb/plugin-toolchain':
-        specifier: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-toolchain-0.1.0.tgz
-        version: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-toolchain-0.1.0.tgz
+        specifier: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-toolchain-0.2.1.tgz
+        version: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-toolchain-0.2.1.tgz
 
 packages:
 
-  '@orb/plugin-sdk@https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-sdk-0.1.0.tgz':
-    resolution: {integrity: sha512-Nyyzi7EINB6WH1TIFaYJNl5KU3v4GPm2/rKOjrZXZO76ms/by/N62T5NHr/q6utLUc3112/qo53LfQJKiuKa1g==, tarball: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-sdk-0.1.0.tgz}
-    version: 0.1.0
+  '@orb/plugin-sdk@https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-sdk-0.2.1.tgz':
+    resolution: {integrity: sha512-1w/BEjHE43YtGS3sCSGmkCTABMFSOMUZcpXJ0LTOfG0qzc2YIdS/y5ZXzTIn3iMBKPATJgRL1d/6wcn18CfDkw==, tarball: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-sdk-0.2.1.tgz}
+    version: 0.2.1
 
-  '@orb/plugin-toolchain@https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-toolchain-0.1.0.tgz':
-    resolution: {integrity: sha512-S227TgZgzxo+RePvObowgKdi3wAXBaGwAYZRnRYgzYK0sOZJJljjgo3aDs5ycv8wr/clRlL6iCE+UpQaxlehGQ==, tarball: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-toolchain-0.1.0.tgz}
-    version: 0.1.0
+  '@orb/plugin-toolchain@https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-toolchain-0.2.1.tgz':
+    resolution: {integrity: sha512-LN7lzmjxFqjxHlyWIYay9YB59dp5NGxnVUthyTkTCCCDiT2RfHXDamHgzh91JtlHkqdkRWLOpU/u1chx4qAWAQ==, tarball: https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-toolchain-0.2.1.tgz}
+    version: 0.2.1
     engines: {node: '>=26.3.0'}
     hasBin: true
 
@@ -195,9 +195,9 @@ packages:
 
 snapshots:
 
-  '@orb/plugin-sdk@https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-sdk-0.1.0.tgz': {}
+  '@orb/plugin-sdk@https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-sdk-0.2.1.tgz': {}
 
-  '@orb/plugin-toolchain@https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.1.0/orb-plugin-toolchain-0.1.0.tgz':
+  '@orb/plugin-toolchain@https://github.com/Inktomi93/OrbWeaver/releases/download/plugin-authoring-v0.2.1/orb-plugin-toolchain-0.2.1.tgz':
     dependencies:
       fflate: 0.8.3
       typescript: 6.0.3
