@@ -52,6 +52,7 @@ jobs:
             package.json > package.json.next
           mv package.json.next package.json
           pnpm install --no-frozen-lockfile
+          pnpm exec orb-plugin support --write SUPPORT.md
           pnpm build
           pnpm check
           git config user.name "github-actions[bot]"
